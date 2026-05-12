@@ -9,7 +9,7 @@ For Figure 6, the initial data are in the folder Fig6, in the appropriate subfol
 
 [tdata,rho_data,C_data,S_data,xp] = ContinuumPDESolver(readmatrix('rho_initial.csv'),readmatrix('C_initial.csv'),readmatrix('S_initial.csv'),3,0.05,320,16384,2^(-12),800)
 
-The quasistatic model (Eq. 14 in the paper) is solved by the MATLAB code QuasistaticPDESolver.m. The command for generating the data is in Figure 6 is
+The quasistatic model (Eq. 14 in the paper) is solved by the MATLAB code QuasistaticPDESolver.m. The command for generating the data in Figure 6 is
 
 [tdata,rho_data] = QuasistaticPDESolver(readmatrix('rho_initial.csv'),3,0.05,320,16384,2^(-12),800)
 
